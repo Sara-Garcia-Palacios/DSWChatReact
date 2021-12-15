@@ -14,7 +14,7 @@ const Agregar = () => {
             console.log('texto vacío')
             return
         }
-        agregarMensaje(usuario.uid, mensaje)
+        agregarMensaje(usuario.uid, mensaje, usuario.email)
         setMensaje('')
     }
 

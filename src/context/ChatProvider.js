@@ -47,11 +47,12 @@ const ChatProvider = (props) => {
         })
     } 
 
-    const agregarMensaje = async (uid, texto) => {
+    const agregarMensaje = async (uid, texto,email) => {
         try {
             await db.collection('messages').add({
                 uid: uid,
                 texto: texto,
+                email:email,
                 fecha: Date.now()
             })
         } catch (error) {

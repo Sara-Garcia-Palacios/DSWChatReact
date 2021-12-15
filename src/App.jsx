@@ -8,7 +8,7 @@ const App = () => {
     const {usuario} = React.useContext(ChatContext)
 
     return usuario.activo !== null ? (
-        <div>
+        <div className='container'>
             <Navbar />
             {
                 usuario.activo ? (

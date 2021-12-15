@@ -28,13 +28,13 @@ const Chat = () => {
                 mensajes.map((item, index) => (
                     item.uid === usuario.uid ? (
                         <div className="d-flex justify-content-end mb-2" key={index}>
-                            <p1>Usuario: {item.uid} 
+                            <p1>Usuario: {item.email} 
                              Say: </p1>
                             <p>{item.texto}</p>
                         </div>
                     ) : (
                         <div className="d-flex justify-content-start mb-2" key={index}>
-                            <p>Usuario: {item.uid}
+                            <p>Usuario: {item.email}
                              Say:
                               </p>
                             <p>{item.texto}</p>
